@@ -1,16 +1,16 @@
 
 h1{
   font-size: 30px;
-  color: #fff;
+  
   text-transform: uppercase;
   font-weight: 300;
   text-align: center;
   margin-bottom: 15px;
 }
 
-td{
+body{
 
-    /*height:35px;*/
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 #footer{
@@ -18,10 +18,6 @@ td{
     align-content: center;
 }
 
-.test123{
-
-    height:35px !important;
-}
 
 table {
 
@@ -30,21 +26,17 @@ table {
   position: relative;
 
 }
-.tbl-header{
-  background-color: rgba(255,255,255,0.3);
- }
 .tbl-content {
     height: 600px;
     overflow-y: auto;
     vertical-align: middle;
-    border: 1px solid rgba(255,255,255,0.3);
+    
 }
 th{
   padding: 20px 15px;
   text-align: left;
   font-weight: 500;
   font-size: 12px;
-  color: #fff;
   text-transform: uppercase;
 }
 td{
@@ -53,8 +45,6 @@ td{
   vertical-align:middle;
   font-weight: 300;
   font-size: 12px;
-  color: #fff;
-  border-bottom: solid 1px rgba(255,255,255,0.1);
   width: 25%;
   position: relative;
 }
@@ -64,15 +54,6 @@ td{
     height: 30px !important;
 }
 
-
-/* demo styles */
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-body{
-  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-  background: linear-gradient(to right, #25c481, #25b7c4);
-  font-family: 'Roboto', sans-serif;
-}
 section{
   margin: 50px;
 }
@@ -83,35 +64,53 @@ section{
     position:relative;
 }
 
-
-/* for custom scrollbar for webkit browser*/
-
 ::-webkit-scrollbar {
     width: 10px;
 
     
 } 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 } 
 ::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 }
 
-.scroller::-webkit-scrollbar-thumb {
-    background: gray;
-    height: 28px;
-    border-radius: 9px;
-    margin-top: 2000px;
-}
-
-.scroller::-webkit-scrollbar-track-piece {
-    background: lightgray;
-    border-radius: 9px;
-    margin-top: 2000px;
-}
-
 #tbody_id{
 
     position:absolute;
+}
+
+.file-upload {
+	position: relative;
+	display: inline-block;
+}
+
+.file-upload__label {
+  display: block;
+  padding: 1em 2em;
+  ;
+  background: #ccffcc;
+  border-radius: .4em;
+  transition: background .3s;
+  font-size: 4mm;
+  
+  
+}
+
+.file-upload__label:hover {
+  cursor: pointer;
+  background: #b3ffb3;
+}
+    
+.file-upload__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1;
+    width:0;
+    height: 100%;
+    opacity: 0;
 }
